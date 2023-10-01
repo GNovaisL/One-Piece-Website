@@ -1,0 +1,121 @@
+body{
+    background-color: #000;
+    overflow: hidden;
+}
+
+main::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0 , 0) 65%) no-repeat;
+    
+}
+
+main .personagem{
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado{
+    display: block;
+}
+
+main .personagem .imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo{
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem{
+    color: white;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.conteudo .descricao{
+    color: white;
+    font-family: "Rubik";
+    line-height: 24px;
+
+}
+
+.conteudo .logo{
+    background-image: url("../imagens/one-piece-logo.png");
+    background-size: cover;
+    margin-bottom: 35px;
+    width: 230px;
+    height: 100px;
+}
+
+.botoes{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    right: 0;
+    top: 0;
+    min-height: 100vh;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.botoes .botao{
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botoes .botao img{
+    border-radius: 50%;
+}
+
+.botoes .botao.selecionado.luffy{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff2121;
+    
+}
+
+.botoes .botao.selecionado.zoro{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #55ff21;
+    
+}
+
+.botoes .botao.selecionado.nami{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffae00;
+    
+}
+
+.botoes .botao.selecionado.sanji{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #214aff;
+    
+}
+
+.botoes .botao.selecionado.chopper{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff21ec;
+    
+}
